@@ -14,14 +14,7 @@ app.use(express.json());
 app.use(sessionInfo);
 app.use(bodyParser.json());
 app.use(cors({
-  origin: [
-    "http://127.0.0.1:5501",
-    "http://localhost:5500",
-    "http://127.0.0.1:5500",
-    "http://localhost:3000"
-  ]
-  ,
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: "https://smart-tuition-management-website.onrender.com",
   credentials: true
 }));
 
