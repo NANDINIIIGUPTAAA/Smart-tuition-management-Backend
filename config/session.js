@@ -13,7 +13,7 @@ module.exports=session({
     cookie:{
         httpOnly:true,
         maxAge:1000*60*60,
-        secure:false,
+        secure:true,
         sameSite:"lax"
     }
 });
