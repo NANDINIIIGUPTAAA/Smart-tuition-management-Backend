@@ -11,7 +11,7 @@ module.exports=session({
         collectionName:'sessions'
     }),
     cookie:{
-        httpOnly:true,
+        // httpOnly:true,
         maxAge:1000*60*60,
         secure:true,
         sameSite:"lax"
