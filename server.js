@@ -7,9 +7,10 @@ const adminroute=require('./Route/adminroute');
 const userroute=require('./Route/userroute');
 const feesroute=require('./Route/feesroute');
 const myDB=require('./config/db');
-const cors=require('cors')
+const cors=require('cors');
 myDB();
 const app=express();
+app.set('trust proxy',1);
 app.use(express.json());
 app.use(sessionInfo);
 app.use(bodyParser.json());
